@@ -23,7 +23,7 @@ make_analog_padring:
 
 	# copy final results to top directory
 	rm -rf $(PROJECT_DIR)/$(TOP)/final
-	cp -r $(PROJECT_DIR)/$(TOP)/runs/$(TAG)/final $(PROJECT_DIR)/$(TOP)
+	cp -r $(PROJECT_DIR)/$(TOP)/runs/$(TAG)_padring/final $(PROJECT_DIR)/$(TOP)
 
 .PHONY: view_results
 view_results: 

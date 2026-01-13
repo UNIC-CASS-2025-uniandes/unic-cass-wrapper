@@ -3,13 +3,21 @@ module user_project_wrapper (analog_io_0,
     io_clock_PAD,
     io_reset_PAD,
     ui_PAD,
-    uo_PAD);
+    uo_PAD,
+    VDD,
+    VSS,
+    IOVDD,
+    IOVSS);
  inout analog_io_0;
  inout analog_io_1;
  inout io_clock_PAD;
  inout io_reset_PAD;
  inout [15:0] ui_PAD;
  inout [15:0] uo_PAD;
+ input VDD;
+ input VSS;
+ input IOVDD;
+ input IOVSS;
 
  wire analog_io_0_padres;
  wire analog_io_1_padres;
