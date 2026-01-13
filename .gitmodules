@@ -1,3 +1,6 @@
 [submodule "librelane"]
 	path = librelane
 	url = https://github.com/librelane/librelane.git
+[submodule "IHP-Open-PDK"]
+	path = IHP-Open-PDK
+	url = https://github.com/IHP-GmbH/IHP-Open-PDK.git
