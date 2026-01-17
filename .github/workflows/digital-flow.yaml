@@ -19,7 +19,7 @@ jobs:
       run: |
         source /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
         git config --global --add safe.directory "$(pwd)"
-        make
+        make librelane
 
     - name: Upload LibreLane artifacts
       if: always()
@@ -27,5 +27,5 @@ jobs:
       with:
         name: librelane-${{ github.sha }}
         path: |
-          user_project_wrapper/final/**
+          final/**
         if-no-files-found: warn
