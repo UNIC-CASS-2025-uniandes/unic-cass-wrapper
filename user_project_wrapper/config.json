@@ -14,6 +14,8 @@
     "PDN_CORE_RING_CONNECT_TO_PADS": true,
     "MAGIC_EXT_UNIQUE": "notopports",
 
+    "PDN_ENABLE_PINS": false,
+
     "PDN_CORE_RING_VWIDTH": 15,
     "PDN_CORE_RING_HWIDTH": 15,
 
@@ -131,7 +133,6 @@
         "version": 3,
         "flow": "Chip",
         "substituting_steps": {
-            "KLayout.DRC": null,
             "Magic.DRC": null,
             "KLayout.Antenna": null,
             "Checker.KLayoutAntenna": null,
