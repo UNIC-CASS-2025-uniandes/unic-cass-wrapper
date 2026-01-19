@@ -9,11 +9,17 @@ LIBRELANE_DIR ?= $(PROJECT_DIR)/librelane
 PDK_ROOT = $(PROJECT_DIR)/IHP-Open-PDK
 PDK=ihp-sg13g2
 
-CONFIG_FILE = $(PROJECT_DIR)/$(TOP)/config.json
-
 list:
 	@echo $(designs)
 
+ifeq ($(VIEW_RESULTS),1)
+.PHONY: $(designs)
+$(designs): export current_design=$@
+$(designs):
+	# View the results in KLayout
+	nix-shell --pure $(LIBRELANE_DIR) --run "PDK_ROOT=$(PDK_ROOT) PDK=$(PDK) librelane --last-run --manual-pdk $(current_design)/config.json --flow OpenInOpenROAD"
+
+else 
 .PHONY: $(designs)
 $(designs): export current_design=$@
 $(designs):
@@ -22,8 +28,5 @@ $(designs):
 	# copy final results to top directory
 	rm -rf $(current_design)/final
 	cp -r $(current_design)/runs/$(TAG)/final $(current_design)/final
-
-.PHONY: view_results
-view_results:
-	# View the results in KLayout
-	nix-shell --pure $(LIBRELANE_DIR) --run "PDK_ROOT=$(PDK_ROOT) PDK=$(PDK) librelane --last-run --manual-pdk $(CONFIG_FILE) --flow OpenInOpenROAD"
+ 
+endif
