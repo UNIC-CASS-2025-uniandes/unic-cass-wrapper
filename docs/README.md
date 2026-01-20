@@ -9,8 +9,9 @@ Table of contents
 =================
 
 1. [Overview](#overview)
-2. [Architecture](#architecture)
-3. [Quick Start](#quick-start)
+2. [Quick Start](#quick-start)
+3. [GPIO Configuration](#gpio-configuration)
+4. [Layout Integration](#layout-integration)
 
 Overview
 ========
@@ -20,9 +21,6 @@ The UNIC-CASS Wrapper is an open-source chip integration template designed to st
 Inspired by the Caravel integration concept, this repository provides a lightweight wrapper architecture that enables designers to focus on their core circuit designs while relying on a predefined, reusable top-level structure for chip-level integration. Unlike Caravel, the UNIC-CASS Wrapper does not implement a System-on-Chip (SoC); instead, it serves purely as a generic template for integrating one or more user designs into a manufacturable chip.
 
 This repository is part of the Universalization of IC Design from CASS (UNIC-CASS) program—an open, end-to-end initiative aimed at democratizing integrated circuit design education and fabrication through open-source tools, workflows, and PDKs.
-
-Architecture
-============
 
 Quick Start
 ===========
@@ -68,3 +66,14 @@ Quick Start
     1. Run again the complete flow.
     2. If it passes DRC and LVS it is ready for tapeout.
 6. This main Makefile will be run in github every time you push a change. The action must pass in order to complete the mock-tapeout process.
+
+GPIO Configuration
+=================
+
+![architecture](img/unic-cass-mock-tapeout-pinlist.png)
+
+Layout Integration
+=================
+
+![architecture](img/unic-cass-mock-tapeout.png)
+
