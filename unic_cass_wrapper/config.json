@@ -123,20 +123,20 @@
     ],
 
     "MACROS": {
-            "user_project_example": {
-                "gds": "dir::../unic_cass_wrapper_user_project/user_project_example/final/gds/user_project_example.gds",
-                "lef": "dir::../unic_cass_wrapper_user_project/user_project_example/final/lef/user_project_example.lef",
-                "nl": "dir::../unic_cass_wrapper_user_project/user_project_example/final/pnl/user_project_example.pnl.v",
+            "your_design": {
+                "gds": "dir::../unic_cass_wrapper_user_project/your_design/final/gds/your_design.gds",
+                "lef": "dir::../unic_cass_wrapper_user_project/your_design/final/lef/your_design.lef",
+                "nl": "dir::../unic_cass_wrapper_user_project/your_design/final/pnl/your_design.pnl.v",
                 "lib": {
-                    "nom_typ_1p20V_25C": "dir::../unic_cass_wrapper_user_project/user_project_example/final/lib/nom_typ_1p20V_25C/user_project_example__nom_typ_1p20V_25C.lib",
-                    "nom_fast_1p32V_m40C": "dir::../unic_cass_wrapper_user_project/user_project_example/final/lib/nom_fast_1p32V_m40C/user_project_example__nom_fast_1p32V_m40C.lib",
-                    "nom_slow_1p08V_125C": "dir::../unic_cass_wrapper_user_project/user_project_example/final/lib/nom_slow_1p08V_125C/user_project_example__nom_slow_1p08V_125C.lib"
+                    "nom_typ_1p20V_25C": "dir::../unic_cass_wrapper_user_project/your_design/final/lib/nom_typ_1p20V_25C/your_design__nom_typ_1p20V_25C.lib",
+                    "nom_fast_1p32V_m40C": "dir::../unic_cass_wrapper_user_project/your_design/final/lib/nom_fast_1p32V_m40C/your_design__nom_fast_1p32V_m40C.lib",
+                    "nom_slow_1p08V_125C": "dir::../unic_cass_wrapper_user_project/your_design/final/lib/nom_slow_1p08V_125C/your_design__nom_slow_1p08V_125C.lib"
                 },
                 "spef": {
-                    "nom_typ_1p20V_25C": "dir::../unic_cass_wrapper_user_project/user_project_example/final/spef/nom/user_project_example.nom.spef"
+                    "nom_typ_1p20V_25C": "dir::../unic_cass_wrapper_user_project/your_design/final/spef/nom/your_design.nom.spef"
                 },
                 "instances": {
-                    "user_project_example_inst": {
+                    "your_design_inst": {
                         "location": [530, 530],
                         "orientation": "N"
                     }
